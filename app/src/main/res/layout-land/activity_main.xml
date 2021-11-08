@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="484dp" />
+            app:layout_constraintGuide_begin="397dp" />
 
         <TextView
             android:id="@+id/textView"
@@ -69,7 +69,6 @@
             android:id="@+id/repo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Goto Repository"
             app:backgroundTint="#4CAF50"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
@@ -111,22 +110,22 @@
             android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="170dp"
+            android:src="@drawable/repo"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/repo"
-            android:src="@drawable/repo" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/app"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="4dp"
             android:text="Start Application"
             app:backgroundTint="#FFEB3B"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-            app:layout_constraintHorizontal_bias="0.486"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
