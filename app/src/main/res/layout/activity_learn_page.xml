@@ -22,21 +22,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.04" />
+            app:layout_constraintGuide_percent="0.08" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.98" />
+            app:layout_constraintGuide_percent="0.91" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineBottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="716dp" />
+            app:layout_constraintGuide_begin="472dp" />
 
         <TextView
             android:id="@+id/Title"
@@ -56,7 +56,7 @@
             android:id="@+id/imageView2"
             android:layout_width="260dp"
             android:layout_height="143dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/Title"
             app:srcCompat="@drawable/book" />
@@ -67,9 +67,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:fontFamily="monospace"
-            android:text="Welcome"
+            android:text="Select Category"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="10dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/spinner"
             app:layout_constraintHorizontal_bias="0.0"
@@ -87,16 +87,17 @@
 
         <TextView
             android:id="@+id/text_area"
-            android:layout_width="0dp"
-            android:layout_height="430dp"
-            android:text="TextView"
+            android:layout_width="327dp"
+            android:layout_height="178dp"
             android:background="@drawable/border"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/welcome"
-            app:layout_constraintVertical_bias="0.926" />
+            app:layout_constraintVertical_bias="0.843" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
