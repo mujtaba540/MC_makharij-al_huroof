@@ -110,7 +110,7 @@
             android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="170dp"
-            android:src="@drawable/repo"
+            android:src="@drawable/repo1"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
             app:layout_constraintHorizontal_bias="0.0"
