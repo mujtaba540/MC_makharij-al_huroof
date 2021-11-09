@@ -36,6 +36,7 @@ public class Quiz_page extends AppCompatActivity {
         que.setText(data[0].question);
         ok=findViewById(R.id.ok);
         no=findViewById(R.id.no);
+        share=findViewById(R.id.share);
 
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,15 +76,42 @@ public class Quiz_page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(i==data.length){
-                    Intent i=new Intent(Intent.ACTION_SEND);
-                    startActivity(i);
+                    Intent sendIntent = new Intent();
+                    sendIntent.setAction(Intent.ACTION_SEND);
+                    sendIntent.putExtra(Intent.EXTRA_TEXT, "Quiz Score: "+score);
+                    sendIntent.setType("text/plain");
+
+                    Intent shareIntent = Intent.createChooser(sendIntent, null);
+                    startActivity(shareIntent);
                 }else{
                     Toast.makeText(Quiz_page.this, "Complete Quiz to Share Score", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
+    }
+    @Override
 
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        super.onSaveInstanceState(savedInstanceState);
+        if(i<data.length){
+            savedInstanceState.putString("question", data[i].question);
+
+        }
+
+
+    }
+
+    @Override
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+
+        super.onRestoreInstanceState(savedInstanceState);
+
+        String myString = savedInstanceState.getString("question");
+
+        que.setText(myString);
 
     }
 }
