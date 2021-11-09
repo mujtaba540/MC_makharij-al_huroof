@@ -11,15 +11,15 @@
         android:theme="@style/Theme.Makharij_al_huroof">
         <activity
             android:launchMode="singleTask"
-            android:name=".Quiz_page"></activity>
+            android:name=".Layouts.Quiz_page"></activity>
         <activity
             android:launchMode="singleTask"
-            android:name=".Learn_page" />
+            android:name=".Layouts.Learn_page" />
         <activity
-            android:name=".Home"
+            android:name=".Layouts.Home"
             android:launchMode="singleTask" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Layouts.MainActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
