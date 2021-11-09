@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        repo=findViewById(R.id.repo);
-        app=findViewById(R.id.app);
+        repo=findViewById(R.id.quiz);
+        app=findViewById(R.id.learn);
 
         repo.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,10 +11,16 @@
         android:theme="@style/Theme.Makharij_al_huroof">
         <activity
             android:launchMode="singleTask"
-            android:name=".Home"></activity>
+            android:name=".Quiz_page"></activity>
         <activity
             android:launchMode="singleTask"
-            android:name=".MainActivity">
+            android:name=".Learn_page" />
+        <activity
+            android:name=".Home"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
